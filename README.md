@@ -33,28 +33,9 @@ A robust **RISC-V Assembly (RV32I)** program designed to parse, validate, and ev
 
 ---
 
-## 🚀 Getting Started
-
-### Prerequisites
-
-To assemble and run this RISC-V assembly program, you need a RISC-V simulator. We recommend:
-* **[RARS (RISC-V Assembler and Runtime Simulator)](https://github.com/The-Open-Architecture-Environment/rars)**
-
----
-
-### How to Run
-
-1. **Launch RARS** (or your preferred RISC-V simulator).
-2. **Open the Project**: Load [`progetto.s`](file:///C:/Users/pietr/Desktop/Pietro_2/Uni/Progetto%20Assembly%20RISC-V%20Pietro%20Palandrani/Progetto%20Assembly%20RISC-V%20Pietro%20Palandrani/progetto.s).
-3. **Assemble**: Click **Assemble** (or press `F3`).
-4. **Execute**: Click **Run** (or press `F5`).
-5. **View Output**: The result or error message will be printed in the simulator's execution console (`ecall` output).
-
----
-
 ## 🧪 Testing Custom Expressions
 
-In [`progetto.s`](file:///C:/Users/pietr/Desktop/Pietro_2/Uni/Progetto%20Assembly%20RISC-V%20Pietro%20Palandrani/Progetto%20Assembly%20RISC-V%20Pietro%20Palandrani/progetto.s#L2-L10), multiple pre-defined expressions are stored in the `.data` section:
+In [`main.s`], multiple pre-defined expressions are stored in the `.data` section:
 
 ```assembly
 menoTrecentoVentiQuattro: .string "((1+2)*(3*2))-(1+(1024/3))"
@@ -68,7 +49,7 @@ ofSub:                    .string "(0-2147483647)-2"
 erroreParentesi:          .string "32+(7-(2+3)"
 ```
 
-To test a specific expression (or your own custom string), update line 35 in [`progetto.s`](file:///C:/Users/pietr/Desktop/Pietro_2/Uni/Progetto%20Assembly%20RISC-V%20Pietro%20Palandrani/Progetto%20Assembly%20RISC-V%20Pietro%20Palandrani/progetto.s#L35):
+To test a specific expression (or your own custom string), update line 35 in [`main.s`]:
 
 ```assembly
 la a1 <string_name>   # e.g., la a1 menoTrecentoVentiQuattro
@@ -101,4 +82,4 @@ la a1 <string_name>   # e.g., la a1 menoTrecentoVentiQuattro
 ## 👨‍💻 Author
 
 **Pietro Palandrani**  
-Computer Engineering / Computer Science Project
+Computer Science Project for the course Computer Architecture at University of Florence
