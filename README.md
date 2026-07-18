@@ -2,7 +2,7 @@
 
 A robust **RISC-V Assembly (RV32I)** program designed to parse, validate, and evaluate complex arithmetic expressions provided as ASCII strings. The program supports standard operations (`+`, `-`, `*`, `/`), nested parentheses, multi-digit integer conversions, and complete low-level arithmetic routines implemented from scratch.
 
----
+
 
 ## 🌟 Key Features
 
@@ -19,19 +19,7 @@ A robust **RISC-V Assembly (RV32I)** program designed to parse, validate, and ev
   * Validates parenthesis matching (`una o più parentesi non sono chiuse o non sono state aperte`).
   * Catches invalid characters and malformed expression syntax.
 
----
 
-## 📁 Project Structure
-
-```text
-.
-├── progetto.s                             # Main RISC-V assembly source file
-├── Relazione progetto assembly RISC.docx  # Detailed project report (Italian)
-├── Test Video.mp4                         # Execution demo video
-└── README.md                              # Project documentation
-```
-
----
 
 ## 🧪 Testing Custom Expressions
 
@@ -55,7 +43,6 @@ To test a specific expression (or your own custom string), update line 35 in [`m
 la a1 <string_name>   # e.g., la a1 menoTrecentoVentiQuattro
 ```
 
----
 
 ## ⚙️ Technical Architecture & Register Allocation
 
@@ -77,7 +64,7 @@ la a1 <string_name>   # e.g., la a1 menoTrecentoVentiQuattro
 | `a6` | Parenthesis balance counter |
 | `sp` | Stack pointer for subexpressions & nested evaluations |
 
----
+
 
 ## 👨‍💻 Author
 
